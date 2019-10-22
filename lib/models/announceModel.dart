@@ -3,9 +3,21 @@ class AnnounceModel {
   String city;
   String announcerFullName;
   String message;
+  String announcerPhone;
   List<PriceSuggestionsModel> priceSuggestions=new List<PriceSuggestionsModel>();
   AnnounceModel({this.announceName, this.announcerFullName, this.city,
-      this.message, this.priceSuggestions});
+      this.message, this.priceSuggestions,this.announcerPhone});
+  Map<String,dynamic> toMap(){
+    final Map<String,dynamic> map = {
+      "announceName":announceName,
+      "AnnouncerFullName":announcerFullName,
+      "AnnouncerPhone": announcerPhone,
+      "Message":message,
+      "City":city,
+      "PriceSuggestions":priceSuggestions.length==0?[]: List.generate(priceSuggestions.length, (index)=>priceSuggestions[index].toMap())
+    };
+    return map;
+  }
 }
 
 class PriceSuggestionsModel {
@@ -41,4 +53,11 @@ class PriceSuggestionsModel {
    // print("+++++++++___________-  ${fullName.runtimeType} ${suggestion.runtimeType} ${rating.runtimeType}");
   }
   
+  Map<String,dynamic> toMap(){
+    return {
+      "FullName":fullName,
+      "Rating":rating,
+      "Suggestion":suggestion
+    };
+  }
 }

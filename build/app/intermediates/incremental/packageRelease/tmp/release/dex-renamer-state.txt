@@ -1,4 +1,0 @@
-#Fri Oct 18 15:03:10 AZT 2019
-base.0=/Users/arazmaharramli/Desktop/my_apps/agro_share/build/app/intermediates/transforms/r8/release/0/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

@@ -26,29 +26,33 @@ class AnnounceDetailsPage extends StatelessWidget {
         stars.add(Icon(Icons.star, color: Colors.yellow));
       }
       list.add(ListTile(
-        title: Row(
-          children: [
-            Text(item.fullName,style: TextStyle(fontSize: 16)),
-            Expanded(
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Text("${item.suggestion} AZN",style: TextStyle(fontSize: 16)),
-              ),
-            )
-          ],
-        ),
-        subtitle: Row(mainAxisAlignment: MainAxisAlignment.center,children: stars,)
+          title: Row(
+            children: [
+              Text(item.fullName, style: TextStyle(fontSize: 16)),
+              Expanded(
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Text("${item.suggestion} AZN",
+                      style: TextStyle(fontSize: 16)),
+                ),
+              )
+            ],
+          ),
+          subtitle: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: stars,
+          )
 
-        // ListView.builder(
-        //   scrollDirection: Axis.horizontal,
-        //   itemCount: int.parse(model.priceSuggestions[index].rating),
-        //   itemBuilder: (context, i) {
-        //     return Container(
-        //       child: Icon(Icons.star, color: Colors.yellow),
-        //     );
-        //   },
-        // ),
-      ));
+          // ListView.builder(
+          //   scrollDirection: Axis.horizontal,
+          //   itemCount: int.parse(model.priceSuggestions[index].rating),
+          //   itemBuilder: (context, i) {
+          //     return Container(
+          //       child: Icon(Icons.star, color: Colors.yellow),
+          //     );
+          //   },
+          // ),
+          ));
     });
     list.insert(
       0,
@@ -58,13 +62,33 @@ class AnnounceDetailsPage extends StatelessWidget {
         height: MediaQuery.of(context).size.width * 0.4,
         alignment: Alignment.center,
         child: Text(
-            model.message,
-            textAlign: TextAlign.center,
-            overflow: TextOverflow.clip,
-            softWrap: true,
-            style: TextStyle(fontSize: 20),),
+          model.message,
+          textAlign: TextAlign.center,
+          overflow: TextOverflow.clip,
+          softWrap: true,
+          style: TextStyle(fontSize: 20),
+        ),
       ),
     );
+    list.add(FlatButton(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            Icons.add_circle_outline,
+            size: 100,
+            color: Colors.grey[350],
+          ),
+        ],
+      ),
+      // Container(
+      //   width: MediaQuery.of(context).size.width-32,
+      //   height:100,
+      //   child: ,
+      //   decoration: BoxDecoration(color: Colors.grey[200]),
+      // ),
+      onPressed: () {},
+    ));
     return list;
   }
 }

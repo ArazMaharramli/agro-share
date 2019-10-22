@@ -2,11 +2,14 @@ import 'package:agro_share/models/announceModel.dart';
 import 'package:agro_share/models/userModel.dart';
 import 'package:agro_share/pages/announce_details_page/announce_details_page.dart';
 import 'package:agro_share/pages/login_page/login_page.dart';
+import 'package:agro_share/pages/my_announcements_page/my_announcements.dart';
 import 'package:agro_share/pages/user_profile_page/user_profile_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:agro_share/pages/my_vehicles_page/my_vehicles_page.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
 
 
 void main() => runApp(MyApp());
@@ -49,6 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // generateListItems();
   }
 
+  static final GlobalKey<FormState> modalBottomSheetFormKey =
+      new GlobalKey<FormState>();
+  AnnounceModel announceModel = new AnnounceModel();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -128,6 +134,24 @@ class _MyHomePageState extends State<MyHomePage> {
                       builder: (context) =>
                           MyVehiclesPage(userUid: widget.user.uid))),
             ),
+             ListTile(
+              title: Row(
+                children: <Widget>[
+                  Icon(Icons.message),
+                  SizedBox(
+                    width: 3,
+                  ),
+                  Text(
+                    "Elanlarım",
+                  ),
+                ],
+              ),
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          MyAnnouncementsPage(userUid: widget.user.uid))),
+            ),
             ListTile(
               title: Row(
                 children: <Widget>[
@@ -189,19 +213,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ListTile(
               title: Row(
                 children: <Widget>[
-                  Icon(Icons.settings),
-                  SizedBox(
-                    width: 3,
-                  ),
-                  Text(
-                    "Tənzimləmələr",
-                  ),
-                ],
-              ),
-            ),
-            ListTile(
-              title: Row(
-                children: <Widget>[
                   Icon(Icons.help_outline),
                   SizedBox(
                     width: 3,
@@ -228,7 +239,134 @@ class _MyHomePageState extends State<MyHomePage> {
           );
         },
       ),
-
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          showModalBottomSheet(
+              isScrollControlled: true,
+              context: context,
+              // useRootNavigator: true,
+              builder: (context) {
+                return Container(
+                    padding: EdgeInsets.all(15),
+                    height: MediaQuery.of(context).size.height - 50,
+                    child: Form(
+                      key: modalBottomSheetFormKey,
+                      child: ListView(
+                        children: <Widget>[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Padding(
+                                padding: EdgeInsets.only(bottom: 30, top: 30),
+                                child: Text(
+                                  "Yeni Elan",
+                                  style: TextStyle(fontSize: 26),
+                                ),
+                              ),
+                            ],
+                          ),
+                          TextFormField(
+                            style: TextStyle(fontSize: 20),
+                            // obscureText: true,
+                            keyboardType: TextInputType.text,
+                            maxLength: 30,
+                            decoration: InputDecoration(
+                              hintText: "Elan adı",
+                              contentPadding: EdgeInsets.fromLTRB(
+                                  20.00, 10.00, 20.00, 10.00),
+                              border: OutlineInputBorder(
+                                  // borderRadius: BorderRadius.only(
+                                  //   topLeft: Radius.circular(20),
+                                  //   topRight: Radius.circular(20),
+                                  // ),
+                                  ),
+                            ),
+                            onSaved: (value) {
+                              announceModel.announceName = value;
+                            },
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          TextFormField(
+                            style: TextStyle(fontSize: 20),
+                            minLines: 5,
+                            maxLines: 5,
+                            maxLength: 50,
+                            //   obscureText: true,
+                            keyboardType: TextInputType.text,
+                            decoration: InputDecoration(
+                              hintText: "Mesajınız",
+                              contentPadding: EdgeInsets.fromLTRB(
+                                  20.00, 10.00, 20.00, 10.00),
+                              border: OutlineInputBorder(
+                                  // borderRadius: BorderRadius.only(
+                                  //   topLeft: Radius.circular(20),
+                                  //   topRight: Radius.circular(20),
+                                  // ),
+                                  ),
+                            ),
+                            onSaved: (value) {
+                              announceModel.message = value;
+                            },
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          ButtonBar(
+                            children: <Widget>[
+                              FlatButton(
+                                color: Colors.blue,
+                                child: Text(
+                                  "Paylaş",
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                onPressed: () {
+                                  // setState(() {
+                                  //   modalBottomSheetSubmitted = true;
+                                  // });
+                                  modalBottomSheetFormKey.currentState.save();
+                                  Navigator.pop(context);
+                                  announceModel.announcerFullName =
+                                      "${widget.user.name} ${widget.user.surname}";
+                                  announceModel.announcerPhone =
+                                      widget.user.phoneNumber;
+                                  announceModel.city = widget.user.city;
+                                  announceModel.priceSuggestions = [];
+                                  Firestore.instance
+                                      .collection("announcements")
+                                      .document(widget.user.uid)
+                                      .get()
+                                      .then((onValue) {
+                                    if (onValue.exists) {
+                                      Firestore.instance
+                                          .collection("announcements")
+                                          .document(widget.user.uid)
+                                          .updateData({
+                                        "announces": FieldValue.arrayUnion(
+                                            [announceModel.toMap()])
+                                      });
+                                    } else {
+                                      Firestore.instance
+                                          .collection("announcements")
+                                          .document(widget.user.uid)
+                                          .setData({
+                                        "announces": FieldValue.arrayUnion(
+                                            [announceModel.toMap()])
+                                      });
+                                    }
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ));
+              });
+        },
+      ),
       // ListView(
       //   children: generateListItems(),
       // ),
@@ -240,7 +378,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // Firestore.instance.collection("announcements").getDocuments().then((docs){
     //  for(var doc in docs.documents){
     //     print(doc.documentID);
-    for (var announce in doc.data["announces"]) {
+    for (var announce in doc.data["announces"].reversed) {
       List<PriceSuggestionsModel> priceSuggestions =
           new List<PriceSuggestionsModel>();
       //  print("==============="+announce.toString());
