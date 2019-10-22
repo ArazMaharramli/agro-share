@@ -8,7 +8,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import 'my_vehicles_page/my_vehicles_page.dart';
 
 void main() => runApp(MyApp());
 
