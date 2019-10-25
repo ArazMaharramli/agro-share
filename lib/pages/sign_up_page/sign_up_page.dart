@@ -1,12 +1,21 @@
-import 'package:agro_share/main.dart';
 import 'package:agro_share/models/userModel.dart';
+import 'package:agro_share/pages/home_page/home_page.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SignUpPage extends StatelessWidget {
+class SignUpPage extends StatefulWidget {
+  SignUpPage({Key key}) : super(key: key);
+
+  @override
+  _SignUpPageState createState() => _SignUpPageState();
+}
+
+class _SignUpPageState extends State<SignUpPage> {
   static final GlobalKey<FormState> formKey = new GlobalKey<FormState>();
+  static final GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
+  
   String password = "", mail = "";
   UserModel userModel = new UserModel();
   Map<String, String> map = {
@@ -19,6 +28,7 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: scaffoldKey,
       body: Center(
         child: Padding(
           padding: EdgeInsets.all(24),
@@ -201,6 +211,8 @@ class SignUpPage extends StatelessWidget {
                       child: Text("Tamam"),
                       color: Colors.blue,
                       onPressed: () {
+                        scaffoldKey.currentState.showSnackBar(SnackBar(content: CircularProgressIndicator(),duration: Duration(minutes: 1),));
+                        formKey.currentState.validate();
                         formKey.currentState.save();
                         FirebaseAuth.instance
                             .createUserWithEmailAndPassword(
@@ -228,7 +240,7 @@ class SignUpPage extends StatelessWidget {
                                 userModel.city = userDetails.data["City"];
                                 userModel.phoneNumber =
                                     userDetails.data["PhoneNumber"];
-
+                                scaffoldKey.currentState.hideCurrentSnackBar();
                                 Navigator.pushAndRemoveUntil(
                                   context,
                                   MaterialPageRoute(builder: (context) {
@@ -241,6 +253,10 @@ class SignUpPage extends StatelessWidget {
                               });
                             });
                           });
+                        },onError: (error){
+                          scaffoldKey.currentState.hideCurrentSnackBar();
+                          scaffoldKey.currentState.showSnackBar(SnackBar(content: Text("Xəta baş verdi"),duration: Duration(seconds: 5),));
+                          formKey.currentState.reset();
                         });
                       },
                     )
