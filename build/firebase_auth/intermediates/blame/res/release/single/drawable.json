@@ -1,31 +1,31 @@
 [
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_focused.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_normal.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark_focused.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_normal.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/notification_bg_low.xml",
@@ -33,11 +33,11 @@
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_disabled.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/notification_bg.xml",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_focused.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/notification_icon_background.xml",
@@ -53,11 +53,11 @@
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_dark_normal.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_text_light_focused.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
@@ -65,10 +65,10 @@
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_light_normal.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/drawable/common_google_signin_btn_icon_disabled.xml",
-        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
+        "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
     }
 ]

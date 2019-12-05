@@ -55,7 +55,7 @@ class _AddVehicleState extends State<AddVehicle> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "Agro Share",
+                      "AgroTaxi",
                       style: TextStyle(fontSize: 30),
                     )
                   ],

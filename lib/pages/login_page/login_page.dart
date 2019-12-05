@@ -14,7 +14,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String _userMail, _userPassword;
-   Size deviceSize ;
+  Size deviceSize;
   static final GlobalKey<FormState> formStateKey = new GlobalKey<FormState>();
   static final GlobalKey<ScaffoldState> scaffoldStateKey =
       new GlobalKey<ScaffoldState>();
@@ -129,6 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                           user.profilePictureUrl = userDetails.data["PhotoUrl"];
                           user.city = userDetails.data["City"];
                           user.phoneNumber = userDetails.data["PhoneNumber"];
+                          user.rating = userDetails.data["Rating"] ?? "1";
 
                           Navigator.pushAndRemoveUntil(
                             context,
@@ -236,7 +237,8 @@ class _LoginPageState extends State<LoginPage> {
       return Opacity(
         opacity: 0.30,
         child: Container(
-          width: deviceSize.width, //scaffoldStateKey.currentState.context.size.width,
+          width: deviceSize
+              .width, //scaffoldStateKey.currentState.context.size.width,
           height: deviceSize.height,
           color: Colors.white,
           alignment: Alignment.center,

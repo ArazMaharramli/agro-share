@@ -344,7 +344,7 @@ Referenced Strings:
   FlagValueProvider
   FlutterActivityDelegate
   FlutterJNI
-  FlutterMain
+  FlutterLoader
   FlutterNativeView
   FlutterRenderer
   FlutterView
@@ -478,6 +478,7 @@ Referenced Strings:
   IS_IMAGE
   IS_INITIALIZED
   IS_IN_MUTUALLY_EXCLUSIVE_GROUP
+  IS_LINK
   IS_LIVE_REGION
   IS_NAN
   IS_NULL
@@ -803,6 +804,7 @@ Referenced Strings:
   SUCCESS_CACHE
   SYNC
   SYNCED
+  Samsung
   Sent
   Set
   SettingsChannel
@@ -976,6 +978,7 @@ Referenced Strings:
   TextInputAction.unspecified
   TextInputChannel
   TextInputClient.performAction
+  TextInputClient.requestExistingInputS...
   TextInputClient.updateEditingState
   TextInputType.datetime
   TextInputType.emailAddress
@@ -1594,6 +1597,7 @@ Referenced Strings:
   default
   defaultGoogleSignInAccount
   defaultPath
+  default_input_method
   deferred_analytics_collection
   delegate
   delegateBuilder
@@ -1601,6 +1605,7 @@ Referenced Strings:
   desc
   description
   dev_cert_hash
+  deviceId
   device_id
   device_model
   direct_boot:
@@ -1625,6 +1630,7 @@ Referenced Strings:
   email
   emailLink
   enable
+  enableSuggestions
   endAt
   endAtDocument
   endBefore
@@ -1960,7 +1966,6 @@ Referenced Strings:
   keymap
   keyup
   kid
-  ko
   label
   language
   languageCode
@@ -2353,6 +2358,7 @@ Referenced Strings:
   removeView
   removeViewImmediate
   removed
+  repeatCount
   requestMarshaller
   required
   resetPassword

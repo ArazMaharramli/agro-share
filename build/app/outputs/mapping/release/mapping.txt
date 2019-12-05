@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 16
-# pg_map_id: 5211328
+# pg_map_id: e71ea57
 androidx.arch.core.executor.ArchTaskExecutor -> a.a.a.a.a:
     androidx.arch.core.executor.ArchTaskExecutor sInstance -> c
     androidx.arch.core.executor.TaskExecutor mDefaultTaskExecutor -> b
@@ -1220,8 +1220,7 @@ androidx.lifecycle.ClassesInfoCache$MethodReference -> androidx.lifecycle.a$b:
 androidx.lifecycle.CompositeGeneratedAdaptersObserver -> androidx.lifecycle.CompositeGeneratedAdaptersObserver:
     androidx.lifecycle.GeneratedAdapter[] mGeneratedAdapters -> a
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
-androidx.lifecycle.DefaultLifecycleObserver -> androidx.lifecycle.b:
-androidx.lifecycle.FullLifecycleObserver -> androidx.lifecycle.c:
+androidx.lifecycle.FullLifecycleObserver -> androidx.lifecycle.b:
     void onResume(androidx.lifecycle.LifecycleOwner) -> a
     void onDestroy(androidx.lifecycle.LifecycleOwner) -> b
     void onCreate(androidx.lifecycle.LifecycleOwner) -> c
@@ -1233,16 +1232,16 @@ androidx.lifecycle.FullLifecycleObserverAdapter -> androidx.lifecycle.FullLifecy
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
 androidx.lifecycle.FullLifecycleObserverAdapter$1 -> androidx.lifecycle.FullLifecycleObserverAdapter$a:
     int[] $SwitchMap$androidx$lifecycle$Lifecycle$Event -> a
-androidx.lifecycle.GeneratedAdapter -> androidx.lifecycle.d:
+androidx.lifecycle.GeneratedAdapter -> androidx.lifecycle.c:
     void callMethods(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event,boolean,androidx.lifecycle.MethodCallsLogger) -> a
-androidx.lifecycle.GenericLifecycleObserver -> androidx.lifecycle.e:
+androidx.lifecycle.GenericLifecycleObserver -> androidx.lifecycle.d:
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
-androidx.lifecycle.Lifecycle -> androidx.lifecycle.f:
+androidx.lifecycle.Lifecycle -> androidx.lifecycle.e:
     void addObserver(androidx.lifecycle.LifecycleObserver) -> a
     androidx.lifecycle.Lifecycle$State getCurrentState() -> a
     void removeObserver(androidx.lifecycle.LifecycleObserver) -> b
-androidx.lifecycle.Lifecycle$Event -> androidx.lifecycle.f$a:
-androidx.lifecycle.Lifecycle$State -> androidx.lifecycle.f$b:
+androidx.lifecycle.Lifecycle$Event -> androidx.lifecycle.e$a:
+androidx.lifecycle.Lifecycle$State -> androidx.lifecycle.e$b:
     androidx.lifecycle.Lifecycle$State INITIALIZED -> b
     androidx.lifecycle.Lifecycle$State DESTROYED -> a
     androidx.lifecycle.Lifecycle$State[] $VALUES -> f
@@ -1250,10 +1249,10 @@ androidx.lifecycle.Lifecycle$State -> androidx.lifecycle.f$b:
     androidx.lifecycle.Lifecycle$State STARTED -> d
     androidx.lifecycle.Lifecycle$State CREATED -> c
     boolean isAtLeast(androidx.lifecycle.Lifecycle$State) -> a
-androidx.lifecycle.LifecycleObserver -> androidx.lifecycle.g:
-androidx.lifecycle.LifecycleOwner -> androidx.lifecycle.h:
+androidx.lifecycle.LifecycleObserver -> androidx.lifecycle.f:
+androidx.lifecycle.LifecycleOwner -> androidx.lifecycle.g:
     androidx.lifecycle.Lifecycle getLifecycle() -> a
-androidx.lifecycle.LifecycleRegistry -> androidx.lifecycle.i:
+androidx.lifecycle.LifecycleRegistry -> androidx.lifecycle.h:
     androidx.lifecycle.Lifecycle$State mState -> b
     androidx.arch.core.internal.FastSafeIterableMap mObserverMap -> a
     boolean mHandlingEvent -> e
@@ -1278,16 +1277,16 @@ androidx.lifecycle.LifecycleRegistry -> androidx.lifecycle.i:
     void pushParentState(androidx.lifecycle.Lifecycle$State) -> d
     void sync() -> d
     androidx.lifecycle.Lifecycle$Event upEvent(androidx.lifecycle.Lifecycle$State) -> e
-androidx.lifecycle.LifecycleRegistry$1 -> androidx.lifecycle.i$a:
+androidx.lifecycle.LifecycleRegistry$1 -> androidx.lifecycle.h$a:
     int[] $SwitchMap$androidx$lifecycle$Lifecycle$State -> b
     int[] $SwitchMap$androidx$lifecycle$Lifecycle$Event -> a
-androidx.lifecycle.LifecycleRegistry$ObserverWithState -> androidx.lifecycle.i$b:
+androidx.lifecycle.LifecycleRegistry$ObserverWithState -> androidx.lifecycle.h$b:
     androidx.lifecycle.Lifecycle$State mState -> a
     androidx.lifecycle.GenericLifecycleObserver mLifecycleObserver -> b
     void dispatchEvent(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
-androidx.lifecycle.LifecycleRegistryOwner -> androidx.lifecycle.j:
+androidx.lifecycle.LifecycleRegistryOwner -> androidx.lifecycle.i:
     androidx.lifecycle.LifecycleRegistry getLifecycle() -> a
-androidx.lifecycle.Lifecycling -> androidx.lifecycle.k:
+androidx.lifecycle.Lifecycling -> androidx.lifecycle.j:
     java.util.Map sCallbackCache -> a
     java.util.Map sClassToAdapters -> b
     androidx.lifecycle.GeneratedAdapter createGeneratedAdapter(java.lang.reflect.Constructor,java.lang.Object) -> a
@@ -1333,43 +1332,43 @@ androidx.lifecycle.LiveData$ObserverWrapper -> androidx.lifecycle.LiveData$b:
     void detachObserver() -> a
     boolean isAttachedTo(androidx.lifecycle.LifecycleOwner) -> a
     boolean shouldBeActive() -> b
-androidx.lifecycle.MethodCallsLogger -> androidx.lifecycle.l:
-androidx.lifecycle.MutableLiveData -> androidx.lifecycle.m:
+androidx.lifecycle.MethodCallsLogger -> androidx.lifecycle.k:
+androidx.lifecycle.MutableLiveData -> androidx.lifecycle.l:
     void setValue(java.lang.Object) -> a
-androidx.lifecycle.Observer -> androidx.lifecycle.n:
+androidx.lifecycle.Observer -> androidx.lifecycle.m:
     void onChanged(java.lang.Object) -> a
-androidx.lifecycle.OnLifecycleEvent -> androidx.lifecycle.o:
+androidx.lifecycle.OnLifecycleEvent -> androidx.lifecycle.n:
 androidx.lifecycle.ReflectiveGenericLifecycleObserver -> androidx.lifecycle.ReflectiveGenericLifecycleObserver:
     androidx.lifecycle.ClassesInfoCache$CallbackInfo mInfo -> b
     java.lang.Object mWrapped -> a
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
-androidx.lifecycle.ReportFragment -> androidx.lifecycle.p:
+androidx.lifecycle.ReportFragment -> androidx.lifecycle.o:
     androidx.lifecycle.ReportFragment$ActivityInitializationListener mProcessListener -> a
     void dispatch(androidx.lifecycle.Lifecycle$Event) -> a
     void dispatchCreate(androidx.lifecycle.ReportFragment$ActivityInitializationListener) -> a
     void injectIfNeededIn(android.app.Activity) -> a
     void dispatchResume(androidx.lifecycle.ReportFragment$ActivityInitializationListener) -> b
     void dispatchStart(androidx.lifecycle.ReportFragment$ActivityInitializationListener) -> c
-androidx.lifecycle.ReportFragment$ActivityInitializationListener -> androidx.lifecycle.p$a:
+androidx.lifecycle.ReportFragment$ActivityInitializationListener -> androidx.lifecycle.o$a:
     void onCreate() -> a
 androidx.lifecycle.SingleGeneratedAdapterObserver -> androidx.lifecycle.SingleGeneratedAdapterObserver:
     androidx.lifecycle.GeneratedAdapter mGeneratedAdapter -> a
     void onStateChanged(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Lifecycle$Event) -> a
-androidx.lifecycle.ViewModel -> androidx.lifecycle.q:
+androidx.lifecycle.ViewModel -> androidx.lifecycle.p:
     void onCleared() -> a
-androidx.lifecycle.ViewModelProvider -> androidx.lifecycle.r:
+androidx.lifecycle.ViewModelProvider -> androidx.lifecycle.q:
     androidx.lifecycle.ViewModelStore mViewModelStore -> b
     androidx.lifecycle.ViewModelProvider$Factory mFactory -> a
     androidx.lifecycle.ViewModel get(java.lang.Class) -> a
     androidx.lifecycle.ViewModel get(java.lang.String,java.lang.Class) -> a
-androidx.lifecycle.ViewModelProvider$Factory -> androidx.lifecycle.r$a:
+androidx.lifecycle.ViewModelProvider$Factory -> androidx.lifecycle.q$a:
     androidx.lifecycle.ViewModel create(java.lang.Class) -> a
-androidx.lifecycle.ViewModelStore -> androidx.lifecycle.s:
+androidx.lifecycle.ViewModelStore -> androidx.lifecycle.r:
     java.util.HashMap mMap -> a
     void clear() -> a
     androidx.lifecycle.ViewModel get(java.lang.String) -> a
     void put(java.lang.String,androidx.lifecycle.ViewModel) -> a
-androidx.lifecycle.ViewModelStoreOwner -> androidx.lifecycle.t:
+androidx.lifecycle.ViewModelStoreOwner -> androidx.lifecycle.s:
     androidx.lifecycle.ViewModelStore getViewModelStore() -> b
 androidx.loader.app.LoaderManager -> a.f.a.a:
     void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[]) -> a
@@ -18255,16 +18254,6 @@ io.flutter.embedding.android.AndroidTouchProcessor -> c.a.b.a.b:
     boolean onTouchEvent(android.view.MotionEvent) -> b
 io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener -> io.flutter.embedding.engine.a:
     void onPreEngineRestart() -> a
-io.flutter.embedding.engine.FlutterEngineAndroidLifecycle -> io.flutter.embedding.engine.FlutterEngineAndroidLifecycle:
-    void handleLifecycleEvent(androidx.lifecycle.Lifecycle$Event) -> a
-io.flutter.embedding.engine.FlutterEngineAndroidLifecycle$1 -> io.flutter.embedding.engine.FlutterEngineAndroidLifecycle$1:
-    io.flutter.embedding.engine.FlutterEngineAndroidLifecycle this$0 -> a
-    void onResume(androidx.lifecycle.LifecycleOwner) -> a
-    void onDestroy(androidx.lifecycle.LifecycleOwner) -> b
-    void onCreate(androidx.lifecycle.LifecycleOwner) -> c
-    void onPause(androidx.lifecycle.LifecycleOwner) -> d
-    void onStop(androidx.lifecycle.LifecycleOwner) -> e
-    void onStart(androidx.lifecycle.LifecycleOwner) -> f
 io.flutter.embedding.engine.FlutterJNI$AccessibilityDelegate -> io.flutter.embedding.engine.FlutterJNI$a:
     void updateCustomAccessibilityActions(java.nio.ByteBuffer,java.lang.String[]) -> a
     void updateSemantics(java.nio.ByteBuffer,java.lang.String[]) -> b
@@ -18272,21 +18261,27 @@ io.flutter.embedding.engine.FlutterJNI$AsyncWaitForVsyncDelegate -> io.flutter.e
     void asyncWaitForVsync(long) -> a
 io.flutter.embedding.engine.dart.DartExecutor -> io.flutter.embedding.engine.b.a:
     io.flutter.embedding.engine.FlutterJNI flutterJNI -> a
-    io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler isolateChannelMessageHandler -> e
-    io.flutter.embedding.engine.dart.DartMessenger messenger -> b
-    io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener isolateServiceIdListener -> d
-    java.lang.String isolateServiceId -> c
+    io.flutter.embedding.engine.dart.DartMessenger dartMessenger -> b
+    io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler isolateChannelMessageHandler -> f
+    io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener isolateServiceIdListener -> e
+    io.flutter.plugin.common.BinaryMessenger binaryMessenger -> c
+    java.lang.String isolateServiceId -> d
     java.lang.String access$000(io.flutter.embedding.engine.dart.DartExecutor) -> a
     java.lang.String access$002(io.flutter.embedding.engine.dart.DartExecutor,java.lang.String) -> a
-    void onAttachedToJNI() -> a
+    io.flutter.plugin.common.BinaryMessenger getBinaryMessenger() -> a
     void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
     void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
     io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener access$100(io.flutter.embedding.engine.dart.DartExecutor) -> b
-    void onDetachedFromJNI() -> b
+    void onAttachedToJNI() -> b
+    void onDetachedFromJNI() -> c
 io.flutter.embedding.engine.dart.DartExecutor$1 -> io.flutter.embedding.engine.b.a$a:
     io.flutter.embedding.engine.dart.DartExecutor this$0 -> a
     void onMessage(java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
-io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener -> io.flutter.embedding.engine.b.a$b:
+io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger -> io.flutter.embedding.engine.b.a$b:
+    io.flutter.embedding.engine.dart.DartMessenger messenger -> a
+    void send(java.lang.String,java.nio.ByteBuffer,io.flutter.plugin.common.BinaryMessenger$BinaryReply) -> a
+    void setMessageHandler(java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler) -> a
+io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener -> io.flutter.embedding.engine.b.a$c:
     void onIsolateServiceIdAvailable(java.lang.String) -> a
 io.flutter.embedding.engine.dart.DartMessenger -> io.flutter.embedding.engine.b.b:
     io.flutter.embedding.engine.FlutterJNI flutterJNI -> a
@@ -18305,7 +18300,43 @@ io.flutter.embedding.engine.dart.DartMessenger$Reply -> io.flutter.embedding.eng
 io.flutter.embedding.engine.dart.PlatformMessageHandler -> io.flutter.embedding.engine.b.c:
     void handleMessageFromDart(java.lang.String,byte[],int) -> a
     void handlePlatformMessageResponse(int,byte[]) -> a
-io.flutter.embedding.engine.renderer.FlutterRenderer -> io.flutter.embedding.engine.c.a:
+io.flutter.embedding.engine.loader.FlutterLoader -> io.flutter.embedding.engine.c.a:
+    java.lang.String PUBLIC_VM_SNAPSHOT_DATA_KEY -> g
+    java.lang.String PUBLIC_AOT_SHARED_LIBRARY_NAME -> f
+    java.lang.String PUBLIC_FLUTTER_ASSETS_DIR_KEY -> i
+    java.lang.String PUBLIC_ISOLATE_SNAPSHOT_DATA_KEY -> h
+    io.flutter.embedding.engine.loader.FlutterLoader instance -> j
+    io.flutter.embedding.engine.loader.ResourceExtractor resourceExtractor -> d
+    io.flutter.embedding.engine.loader.FlutterLoader$Settings settings -> e
+    java.lang.String aotSharedLibraryName -> a
+    java.lang.String flutterAssetsDir -> b
+    boolean initialized -> c
+    void ensureInitializationComplete(android.content.Context,java.lang.String[]) -> a
+    java.lang.String findAppBundlePath() -> a
+    void startInitialization(android.content.Context) -> a
+    void startInitialization(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader$Settings) -> a
+    android.content.pm.ApplicationInfo getApplicationInfo(android.content.Context) -> b
+    io.flutter.embedding.engine.loader.FlutterLoader getInstance() -> b
+    void initConfig(android.content.Context) -> c
+    void initResources(android.content.Context) -> d
+io.flutter.embedding.engine.loader.FlutterLoader$Settings -> io.flutter.embedding.engine.c.a$a:
+    java.lang.String logTag -> a
+    java.lang.String getLogTag() -> a
+io.flutter.embedding.engine.loader.ResourceCleaner -> io.flutter.embedding.engine.c.b:
+    android.content.Context mContext -> a
+    void start() -> a
+io.flutter.embedding.engine.loader.ResourceCleaner$1 -> io.flutter.embedding.engine.c.b$a:
+io.flutter.embedding.engine.loader.ResourceCleaner$2 -> io.flutter.embedding.engine.c.b$b:
+    io.flutter.embedding.engine.loader.ResourceCleaner$CleanTask val$task -> a
+io.flutter.embedding.engine.loader.ResourceCleaner$CleanTask -> io.flutter.embedding.engine.c.b$c:
+    java.io.File[] mFilesToDelete -> a
+    void deleteRecursively(java.io.File) -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    boolean hasFilesToDelete() -> a
+io.flutter.embedding.engine.loader.ResourceExtractor -> io.flutter.embedding.engine.c.c:
+    void waitForCompletion() -> a
+    java.lang.String[] getSupportedAbis() -> b
+io.flutter.embedding.engine.renderer.FlutterRenderer -> io.flutter.embedding.engine.d.a:
     io.flutter.embedding.engine.FlutterJNI flutterJNI -> a
     java.util.concurrent.atomic.AtomicLong nextTextureId -> b
     io.flutter.embedding.engine.renderer.FlutterUiDisplayListener flutterUiDisplayListener -> d
@@ -18318,11 +18349,11 @@ io.flutter.embedding.engine.renderer.FlutterRenderer -> io.flutter.embedding.eng
     void registerTexture(long,android.graphics.SurfaceTexture) -> a
     void access$400(io.flutter.embedding.engine.renderer.FlutterRenderer,long) -> b
     void unregisterTexture(long) -> b
-io.flutter.embedding.engine.renderer.FlutterRenderer$1 -> io.flutter.embedding.engine.c.a$a:
+io.flutter.embedding.engine.renderer.FlutterRenderer$1 -> io.flutter.embedding.engine.d.a$a:
     io.flutter.embedding.engine.renderer.FlutterRenderer this$0 -> a
     void onFlutterUiNoLongerDisplayed() -> a
     void onFlutterUiDisplayed() -> b
-io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry -> io.flutter.embedding.engine.c.a$b:
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry -> io.flutter.embedding.engine.d.a$b:
     io.flutter.embedding.engine.renderer.FlutterRenderer this$0 -> e
     android.graphics.SurfaceTexture surfaceTexture -> b
     android.graphics.SurfaceTexture$OnFrameAvailableListener onFrameListener -> d
@@ -18333,12 +18364,12 @@ io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry
     long access$200(io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry) -> b
     long id() -> b
     android.graphics.SurfaceTexture surfaceTexture() -> c
-io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry$1 -> io.flutter.embedding.engine.c.a$b$a:
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry$1 -> io.flutter.embedding.engine.d.a$b$a:
     io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry this$1 -> a
-io.flutter.embedding.engine.renderer.FlutterUiDisplayListener -> io.flutter.embedding.engine.c.b:
+io.flutter.embedding.engine.renderer.FlutterUiDisplayListener -> io.flutter.embedding.engine.d.b:
     void onFlutterUiNoLongerDisplayed() -> a
     void onFlutterUiDisplayed() -> b
-io.flutter.embedding.engine.systemchannels.AccessibilityChannel -> io.flutter.embedding.engine.d.a:
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel -> io.flutter.embedding.engine.e.a:
     io.flutter.embedding.engine.FlutterJNI flutterJNI -> b
     io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler handler -> c
     io.flutter.plugin.common.BasicMessageChannel$MessageHandler parsingMessageHandler -> d
@@ -18350,43 +18381,45 @@ io.flutter.embedding.engine.systemchannels.AccessibilityChannel -> io.flutter.em
     void setAccessibilityFeatures(int) -> a
     void setAccessibilityMessageHandler(io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler) -> a
     void onAndroidAccessibilityEnabled() -> b
-io.flutter.embedding.engine.systemchannels.AccessibilityChannel$1 -> io.flutter.embedding.engine.d.a$a:
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel$1 -> io.flutter.embedding.engine.e.a$a:
     io.flutter.embedding.engine.systemchannels.AccessibilityChannel this$0 -> a
     void onMessage(java.lang.Object,io.flutter.plugin.common.BasicMessageChannel$Reply) -> a
-io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler -> io.flutter.embedding.engine.d.a$b:
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler -> io.flutter.embedding.engine.e.a$b:
     void onLongPress(int) -> a
     void onTooltip(java.lang.String) -> a
     void announce(java.lang.String) -> b
     void onTap(int) -> b
-io.flutter.embedding.engine.systemchannels.KeyEventChannel -> io.flutter.embedding.engine.d.b:
+io.flutter.embedding.engine.systemchannels.KeyEventChannel -> io.flutter.embedding.engine.e.b:
     io.flutter.plugin.common.BasicMessageChannel channel -> a
     void encodeKeyEvent(io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent,java.util.Map) -> a
     void keyDown(io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent) -> a
     void keyUp(io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent) -> b
-io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent -> io.flutter.embedding.engine.d.b$a:
-    java.lang.Character complexCharacter -> e
-    int productId -> j
-    int source -> h
-    int vendorId -> i
-    int scanCode -> f
-    int metaState -> g
-    int keyCode -> d
-    int plainCodePoint -> b
-    int codePoint -> c
-    int flags -> a
-io.flutter.embedding.engine.systemchannels.LifecycleChannel -> io.flutter.embedding.engine.d.c:
+io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent -> io.flutter.embedding.engine.e.b$a:
+    int repeatCount -> l
+    int vendorId -> j
+    int productId -> k
+    int metaState -> h
+    int source -> i
+    int scanCode -> g
+    int codePoint -> d
+    int keyCode -> e
+    int flags -> b
+    int plainCodePoint -> c
+    java.lang.Character complexCharacter -> f
+    int deviceId -> a
+io.flutter.embedding.engine.systemchannels.LifecycleChannel -> io.flutter.embedding.engine.e.c:
     io.flutter.plugin.common.BasicMessageChannel channel -> a
     void appIsInactive() -> a
     void appIsPaused() -> b
     void appIsResumed() -> c
-io.flutter.embedding.engine.systemchannels.LocalizationChannel -> io.flutter.embedding.engine.d.d:
+io.flutter.embedding.engine.systemchannels.LocalizationChannel -> io.flutter.embedding.engine.e.d:
     io.flutter.plugin.common.MethodChannel channel -> a
     void sendLocales(java.util.List) -> a
-io.flutter.embedding.engine.systemchannels.NavigationChannel -> io.flutter.embedding.engine.d.e:
+io.flutter.embedding.engine.systemchannels.NavigationChannel -> io.flutter.embedding.engine.e.e:
     io.flutter.plugin.common.MethodChannel channel -> a
     void popRoute() -> a
     void setInitialRoute(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel -> io.flutter.embedding.engine.d.f:
+io.flutter.embedding.engine.systemchannels.PlatformChannel -> io.flutter.embedding.engine.e.f:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler parsingMethodCallHandler -> c
     io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler platformMessageHandler -> b
     io.flutter.plugin.common.MethodChannel channel -> a
@@ -18404,27 +18437,27 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel -> io.flutter.embeddi
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle decodeSystemChromeStyle(org.json.JSONObject) -> b
     java.util.ArrayList access$600(io.flutter.embedding.engine.systemchannels.PlatformChannel,org.json.JSONArray) -> c
     java.util.List decodeSystemUiOverlays(org.json.JSONArray) -> c
-io.flutter.embedding.engine.systemchannels.PlatformChannel$1 -> io.flutter.embedding.engine.d.f$a:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$1 -> io.flutter.embedding.engine.e.f$a:
     io.flutter.embedding.engine.systemchannels.PlatformChannel this$0 -> a
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$2 -> io.flutter.embedding.engine.d.f$b:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$2 -> io.flutter.embedding.engine.e.f$b:
     int[] $SwitchMap$io$flutter$embedding$engine$systemchannels$PlatformChannel$SystemUiOverlay -> b
     int[] $SwitchMap$io$flutter$embedding$engine$systemchannels$PlatformChannel$DeviceOrientation -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$AppSwitcherDescription -> io.flutter.embedding.engine.d.f$c:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$AppSwitcherDescription -> io.flutter.embedding.engine.e.f$c:
     java.lang.String label -> b
     int color -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness -> io.flutter.embedding.engine.d.f$d:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness -> io.flutter.embedding.engine.e.f$d:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness[] $VALUES -> d
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness LIGHT -> b
     java.lang.String encodedName -> a
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness DARK -> c
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat -> io.flutter.embedding.engine.d.f$e:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat -> io.flutter.embedding.engine.e.f$e:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat[] $VALUES -> c
     java.lang.String encodedName -> a
     io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat PLAIN_TEXT -> b
     io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation -> io.flutter.embedding.engine.d.f$f:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation -> io.flutter.embedding.engine.e.f$f:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation PORTRAIT_UP -> b
     io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation[] $VALUES -> f
     java.lang.String encodedName -> a
@@ -18432,7 +18465,7 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation -> 
     io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation LANDSCAPE_LEFT -> d
     io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation PORTRAIT_DOWN -> c
     io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType -> io.flutter.embedding.engine.d.f$g:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType -> io.flutter.embedding.engine.e.f$g:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType[] $VALUES -> g
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType HEAVY_IMPACT -> e
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType SELECTION_CLICK -> f
@@ -18441,7 +18474,7 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType ->
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType MEDIUM_IMPACT -> d
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType STANDARD -> b
     io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler -> io.flutter.embedding.engine.d.f$h:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler -> io.flutter.embedding.engine.e.f$h:
     java.lang.CharSequence getClipboardData(io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat) -> a
     void playSystemSound(io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType) -> a
     void restoreSystemUiOverlays() -> a
@@ -18454,24 +18487,24 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandle
     void vibrateHapticFeedback(io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType) -> a
     void popSystemNavigator() -> b
     java.util.List getSystemGestureExclusionRects() -> c
-io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType -> io.flutter.embedding.engine.d.f$i:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType -> io.flutter.embedding.engine.e.f$i:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType CLICK -> b
     java.lang.String encodedName -> a
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType[] $VALUES -> c
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle -> io.flutter.embedding.engine.d.f$j:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle -> io.flutter.embedding.engine.e.f$j:
     java.lang.Integer systemNavigationBarColor -> c
     java.lang.Integer systemNavigationBarDividerColor -> e
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness systemNavigationBarIconBrightness -> d
     io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness statusBarIconBrightness -> b
     java.lang.Integer statusBarColor -> a
-io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay -> io.flutter.embedding.engine.d.f$k:
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay -> io.flutter.embedding.engine.e.f$k:
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay TOP_OVERLAYS -> b
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay BOTTOM_OVERLAYS -> c
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay[] $VALUES -> d
     java.lang.String encodedName -> a
     io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel -> io.flutter.embedding.engine.d.g:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel -> io.flutter.embedding.engine.e.g:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler parsingHandler -> c
     io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler handler -> b
     io.flutter.plugin.common.MethodChannel channel -> a
@@ -18480,7 +18513,7 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel -> io.flutter.em
     void invokeViewFocused(int) -> a
     void setPlatformViewsHandler(io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler) -> a
     java.lang.String detailedExceptionString(java.lang.Exception) -> b
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 -> io.flutter.embedding.engine.d.g$a:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 -> io.flutter.embedding.engine.e.g$a:
     io.flutter.embedding.engine.systemchannels.PlatformViewsChannel this$0 -> a
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
     void clearFocus(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> b
@@ -18489,20 +18522,20 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1 -> io.flutter.
     void resize(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> e
     void setDirection(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> f
     void touch(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> g
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1 -> io.flutter.embedding.engine.d.g$a$a:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1$1 -> io.flutter.embedding.engine.e.g$a$a:
     io.flutter.plugin.common.MethodChannel$Result val$result -> a
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewCreationRequest -> io.flutter.embedding.engine.d.g$b:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewCreationRequest -> io.flutter.embedding.engine.e.g$b:
     java.nio.ByteBuffer params -> f
     double logicalWidth -> c
     double logicalHeight -> d
     int direction -> e
     java.lang.String viewType -> b
     int viewId -> a
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewResizeRequest -> io.flutter.embedding.engine.d.g$c:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewResizeRequest -> io.flutter.embedding.engine.e.g$c:
     double newLogicalWidth -> b
     double newLogicalHeight -> c
     int viewId -> a
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouch -> io.flutter.embedding.engine.d.g$d:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouch -> io.flutter.embedding.engine.e.g$d:
     int source -> n
     float yPrecision -> k
     int flags -> o
@@ -18518,37 +18551,38 @@ io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouc
     int viewId -> a
     java.lang.Number downTime -> b
     java.lang.Number eventTime -> c
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler -> io.flutter.embedding.engine.d.g$e:
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler -> io.flutter.embedding.engine.e.g$e:
     long createPlatformView(io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewCreationRequest) -> a
     void disposePlatformView(int) -> a
     void onTouch(io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouch) -> a
     void resizePlatformView(io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewResizeRequest,java.lang.Runnable) -> a
     void setDirection(int,int) -> a
     void clearFocus(int) -> b
-io.flutter.embedding.engine.systemchannels.SettingsChannel -> io.flutter.embedding.engine.d.h:
+io.flutter.embedding.engine.systemchannels.SettingsChannel -> io.flutter.embedding.engine.e.h:
     io.flutter.plugin.common.BasicMessageChannel channel -> a
     io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder startMessage() -> a
-io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder -> io.flutter.embedding.engine.d.h$a:
+io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder -> io.flutter.embedding.engine.e.h$a:
     java.util.Map message -> b
     io.flutter.plugin.common.BasicMessageChannel channel -> a
     void send() -> a
     io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder setPlatformBrightness(io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness) -> a
     io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder setTextScaleFactor(float) -> a
     io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder setUse24HourFormat(boolean) -> a
-io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness -> io.flutter.embedding.engine.d.h$b:
+io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness -> io.flutter.embedding.engine.e.h$b:
     io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness dark -> c
     io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness[] $VALUES -> d
     io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness light -> b
     java.lang.String name -> a
-io.flutter.embedding.engine.systemchannels.SystemChannel -> io.flutter.embedding.engine.d.i:
+io.flutter.embedding.engine.systemchannels.SystemChannel -> io.flutter.embedding.engine.e.i:
     io.flutter.plugin.common.BasicMessageChannel channel -> a
     void sendMemoryPressureWarning() -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel -> io.flutter.embedding.engine.d.j:
+io.flutter.embedding.engine.systemchannels.TextInputChannel -> io.flutter.embedding.engine.e.j:
     io.flutter.plugin.common.MethodChannel$MethodCallHandler parsingMethodHandler -> c
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler textInputMethodHandler -> b
     io.flutter.plugin.common.MethodChannel channel -> a
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler access$000(io.flutter.embedding.engine.systemchannels.TextInputChannel) -> a
     void done(int) -> a
+    void requestExistingInputState() -> a
     void setTextInputMethodHandler(io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler) -> a
     void updateEditingState(int,java.lang.String,int,int,int,int) -> a
     void go(int) -> b
@@ -18558,24 +18592,25 @@ io.flutter.embedding.engine.systemchannels.TextInputChannel -> io.flutter.embedd
     void search(int) -> f
     void send(int) -> g
     void unspecifiedAction(int) -> h
-io.flutter.embedding.engine.systemchannels.TextInputChannel$1 -> io.flutter.embedding.engine.d.j$a:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$1 -> io.flutter.embedding.engine.e.j$a:
     io.flutter.embedding.engine.systemchannels.TextInputChannel this$0 -> a
     void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result) -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration -> io.flutter.embedding.engine.d.j$b:
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization textCapitalization -> c
-    java.lang.String actionLabel -> f
-    java.lang.Integer inputAction -> e
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType inputType -> d
+io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration -> io.flutter.embedding.engine.e.j$b:
+    java.lang.String actionLabel -> g
+    java.lang.Integer inputAction -> f
+    io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType inputType -> e
     boolean obscureText -> a
     boolean autocorrect -> b
+    boolean enableSuggestions -> c
+    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization textCapitalization -> d
     io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration fromJson(org.json.JSONObject) -> a
     java.lang.Integer inputActionFromTextInputAction(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType -> io.flutter.embedding.engine.d.j$c:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType -> io.flutter.embedding.engine.e.j$c:
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType type -> a
     boolean isSigned -> b
     boolean isDecimal -> c
     io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType fromJson(org.json.JSONObject) -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization -> io.flutter.embedding.engine.d.j$d:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization -> io.flutter.embedding.engine.e.j$d:
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization CHARACTERS -> b
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization WORDS -> c
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization[] $VALUES -> f
@@ -18583,19 +18618,19 @@ io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization -
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization SENTENCES -> d
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization NONE -> e
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization fromValue(java.lang.String) -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState -> io.flutter.embedding.engine.d.j$e:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState -> io.flutter.embedding.engine.e.j$e:
     java.lang.String text -> a
     int selectionStart -> b
     int selectionEnd -> c
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState fromJson(org.json.JSONObject) -> a
-io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler -> io.flutter.embedding.engine.d.j$f:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler -> io.flutter.embedding.engine.e.j$f:
     void clearClient() -> a
     void setClient(int,io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration) -> a
     void setEditingState(io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState) -> a
     void setPlatformViewClient(int) -> a
     void show() -> b
     void hide() -> c
-io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType -> io.flutter.embedding.engine.d.j$g:
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType -> io.flutter.embedding.engine.e.j$g:
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType DATETIME -> c
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType TEXT -> b
     io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType PHONE -> e
@@ -18782,7 +18817,7 @@ io.flutter.plugin.editing.TextInputPlugin -> c.a.c.b.b:
     android.view.inputmethod.InputConnection createInputConnection(android.view.View,android.view.inputmethod.EditorInfo) -> a
     android.view.inputmethod.InputMethodManager getInputMethodManager() -> a
     void hideTextInput(android.view.View) -> a
-    int inputTypeFromTextInputType(io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType,boolean,boolean,io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization) -> a
+    int inputTypeFromTextInputType(io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType,boolean,boolean,boolean,io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization) -> a
     void setTextInputClient(int,io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration) -> a
     void setTextInputEditingState(android.view.View,io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState) -> a
     void access$200(io.flutter.plugin.editing.TextInputPlugin,android.view.View) -> b
@@ -19237,26 +19272,27 @@ io.flutter.view.AccessibilityBridge -> io.flutter.view.c:
     io.flutter.view.AccessibilityViewEmbedder accessibilityViewEmbedder -> d
     io.flutter.embedding.engine.systemchannels.AccessibilityChannel accessibilityChannel -> b
     int accessibilityFeatureFlags -> l
-    java.util.List flutterNavigationStack -> o
+    java.util.List flutterNavigationStack -> p
     io.flutter.plugin.platform.PlatformViewsAccessibilityDelegate platformViewsAccessibilityDelegate -> e
     java.lang.Integer embeddedAccessibilityFocusedNodeId -> j
-    io.flutter.view.AccessibilityBridge$OnAccessibilityChangeListener onAccessibilityChangeListener -> r
-    io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler accessibilityMessageHandler -> s
-    android.database.ContentObserver animationScaleObserver -> v
+    io.flutter.view.AccessibilityBridge$OnAccessibilityChangeListener onAccessibilityChangeListener -> s
+    io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler accessibilityMessageHandler -> t
+    android.database.ContentObserver animationScaleObserver -> w
     io.flutter.view.AccessibilityBridge$SemanticsNode inputFocusedSemanticsNode -> m
-    io.flutter.view.AccessibilityBridge$SemanticsNode hoveredObject -> n
-    android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener touchExplorationStateChangeListener -> u
+    int FIRST_RESOURCE_ID -> x
+    io.flutter.view.AccessibilityBridge$SemanticsNode hoveredObject -> o
+    android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener touchExplorationStateChangeListener -> v
+    io.flutter.view.AccessibilityBridge$SemanticsNode lastInputFocusedSemanticsNode -> n
     android.view.View rootAccessibilityView -> a
     io.flutter.view.AccessibilityBridge$SemanticsNode accessibilityFocusedSemanticsNode -> i
     java.lang.Integer embeddedInputFocusedNodeId -> k
-    int FIRST_RESOURCE_ID -> w
     android.content.ContentResolver contentResolver -> f
     android.view.accessibility.AccessibilityManager accessibilityManager -> c
+    android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener accessibilityStateChangeListener -> u
     java.util.Map flutterSemanticsTree -> g
-    int previousRouteId -> p
-    java.lang.Integer lastLeftFrameInset -> q
-    android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener accessibilityStateChangeListener -> t
     java.util.Map customAccessibilityActions -> h
+    int previousRouteId -> q
+    java.lang.Integer lastLeftFrameInset -> r
     android.view.View access$000(io.flutter.view.AccessibilityBridge) -> a
     void access$100(io.flutter.view.AccessibilityBridge,int,int) -> a
     void access$300(io.flutter.view.AccessibilityBridge,android.view.accessibility.AccessibilityEvent) -> a
@@ -19369,10 +19405,11 @@ io.flutter.view.AccessibilityBridge$Flag -> io.flutter.view.c$h:
     io.flutter.view.AccessibilityBridge$Flag NAMES_ROUTE -> n
     io.flutter.view.AccessibilityBridge$Flag SCOPES_ROUTE -> m
     io.flutter.view.AccessibilityBridge$Flag HAS_IMPLICIT_SCROLLING -> t
+    io.flutter.view.AccessibilityBridge$Flag[] $VALUES -> x
     io.flutter.view.AccessibilityBridge$Flag IS_TOGGLED -> s
-    io.flutter.view.AccessibilityBridge$Flag[] $VALUES -> w
     io.flutter.view.AccessibilityBridge$Flag HAS_TOGGLED_STATE -> r
     io.flutter.view.AccessibilityBridge$Flag IS_LIVE_REGION -> q
+    io.flutter.view.AccessibilityBridge$Flag IS_LINK -> w
     io.flutter.view.AccessibilityBridge$Flag IS_FOCUSABLE -> v
     io.flutter.view.AccessibilityBridge$Flag IS_READ_ONLY -> u
     int value -> a
@@ -19525,26 +19562,10 @@ io.flutter.view.AccessibilityViewEmbedder$ViewAndId -> io.flutter.view.Accessibi
     android.view.View view -> a
     int id -> b
 io.flutter.view.FlutterMain -> io.flutter.view.d:
-    java.lang.String sFlutterAssetsDir -> g
-    java.lang.String sAotSharedLibraryName -> f
-    io.flutter.view.FlutterMain$Settings sSettings -> j
-    boolean isRunningInRobolectricTest -> e
-    java.lang.String PUBLIC_AOT_SHARED_LIBRARY_NAME -> a
-    boolean sInitialized -> h
-    java.lang.String PUBLIC_ISOLATE_SNAPSHOT_DATA_KEY -> c
-    java.lang.String PUBLIC_VM_SNAPSHOT_DATA_KEY -> b
-    java.lang.String PUBLIC_FLUTTER_ASSETS_DIR_KEY -> d
-    io.flutter.view.ResourceExtractor sResourceExtractor -> i
+    boolean isRunningInRobolectricTest -> a
     void ensureInitializationComplete(android.content.Context,java.lang.String[]) -> a
     java.lang.String findAppBundlePath() -> a
-    android.content.pm.ApplicationInfo getApplicationInfo(android.content.Context) -> a
-    void startInitialization(android.content.Context,io.flutter.view.FlutterMain$Settings) -> a
-    void initConfig(android.content.Context) -> b
-    void initResources(android.content.Context) -> c
-    void startInitialization(android.content.Context) -> d
-io.flutter.view.FlutterMain$Settings -> io.flutter.view.d$a:
-    java.lang.String logTag -> a
-    java.lang.String getLogTag() -> a
+    void startInitialization(android.content.Context) -> a
 io.flutter.view.FlutterNativeView -> io.flutter.view.e:
     io.flutter.embedding.engine.FlutterJNI mFlutterJNI -> d
     io.flutter.embedding.engine.dart.DartExecutor dartExecutor -> b
@@ -19676,37 +19697,23 @@ io.flutter.view.FlutterView$ZeroSides -> io.flutter.view.g$h:
     io.flutter.view.FlutterView$ZeroSides RIGHT -> c
     io.flutter.view.FlutterView$ZeroSides LEFT -> b
     io.flutter.view.FlutterView$ZeroSides NONE -> a
-io.flutter.view.ResourceCleaner -> io.flutter.view.h:
-    android.content.Context mContext -> a
-    void start() -> a
-io.flutter.view.ResourceCleaner$1 -> io.flutter.view.h$a:
-io.flutter.view.ResourceCleaner$2 -> io.flutter.view.h$b:
-    io.flutter.view.ResourceCleaner$CleanTask val$task -> a
-io.flutter.view.ResourceCleaner$CleanTask -> io.flutter.view.h$c:
-    java.io.File[] mFilesToDelete -> a
-    void deleteRecursively(java.io.File) -> a
-    java.lang.Void doInBackground(java.lang.Void[]) -> a
-    boolean hasFilesToDelete() -> a
-io.flutter.view.ResourceExtractor -> io.flutter.view.i:
-    void waitForCompletion() -> a
-    java.lang.String[] getSupportedAbis() -> b
-io.flutter.view.TextureRegistry -> io.flutter.view.j:
+io.flutter.view.TextureRegistry -> io.flutter.view.h:
     io.flutter.view.TextureRegistry$SurfaceTextureEntry createSurfaceTexture() -> a
-io.flutter.view.TextureRegistry$SurfaceTextureEntry -> io.flutter.view.j$a:
+io.flutter.view.TextureRegistry$SurfaceTextureEntry -> io.flutter.view.h$a:
     void release() -> a
     long id() -> b
     android.graphics.SurfaceTexture surfaceTexture() -> c
-io.flutter.view.VsyncWaiter -> io.flutter.view.k:
+io.flutter.view.VsyncWaiter -> io.flutter.view.i:
     android.view.WindowManager windowManager -> a
     io.flutter.view.VsyncWaiter instance -> c
     io.flutter.embedding.engine.FlutterJNI$AsyncWaitForVsyncDelegate asyncWaitForVsyncDelegate -> b
     android.view.WindowManager access$000(io.flutter.view.VsyncWaiter) -> a
     io.flutter.view.VsyncWaiter getInstance(android.view.WindowManager) -> a
     void init() -> a
-io.flutter.view.VsyncWaiter$1 -> io.flutter.view.k$a:
+io.flutter.view.VsyncWaiter$1 -> io.flutter.view.i$a:
     io.flutter.view.VsyncWaiter this$0 -> a
     void asyncWaitForVsync(long) -> a
-io.flutter.view.VsyncWaiter$1$1 -> io.flutter.view.k$a$a:
+io.flutter.view.VsyncWaiter$1$1 -> io.flutter.view.i$a$a:
     long val$cookie -> a
     io.flutter.view.VsyncWaiter$1 this$1 -> b
 io.grpc.Attributes -> c.b.a:

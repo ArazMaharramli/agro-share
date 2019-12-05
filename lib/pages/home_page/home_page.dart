@@ -40,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AgroShare"),
+        title: Text("AgroTaxi"),
+        centerTitle: true,
       ),
       drawer: Drawer(
         child: ListView(
@@ -229,30 +230,27 @@ class _MyHomePageState extends State<MyHomePage> {
             firestoreAnnounceItems = new List.from(firestoreAnnounceItems)
               ..addAll(generateListItems(snapshot.data.documents[i]));
           }
-          return AnimatedList(
-            initialItemCount: firestoreAnnounceItems.length,
-            itemBuilder: (context, index, animation) {
-              return FadeTransition(
-                opacity: animation,
-                child: new ListTile(
-                  title: Row(children: [
-                    Text(firestoreAnnounceItems[index].announceName),
-                    Expanded(
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Text(firestoreAnnounceItems[index].city),
-                      ),
-                    )
-                  ]),
-                  subtitle:
-                      Text(firestoreAnnounceItems[index].announcerFullName),
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) {
-                      return AnnounceDetailsPage(
-                          model: firestoreAnnounceItems[index]);
-                    }),
-                  ),
+          return ListView.builder(
+            itemCount: firestoreAnnounceItems.length,
+            itemBuilder: (BuildContext context, int index) {
+              return new ListTile(
+                title: Row(children: [
+                  Text(firestoreAnnounceItems[index].announceName),
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: Text(firestoreAnnounceItems[index].city),
+                    ),
+                  )
+                ]),
+                subtitle: Text(firestoreAnnounceItems[index].announcerFullName),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return AnnounceDetailsPage(
+                        userModel: widget.user,
+                        model: firestoreAnnounceItems[index]);
+                  }),
                 ),
               );
             },
@@ -276,122 +274,123 @@ class _MyHomePageState extends State<MyHomePage> {
               // useRootNavigator: true,
               builder: (context) {
                 return Container(
-                    padding: EdgeInsets.all(15),
-                    height: MediaQuery.of(context).size.height - 50,
-                    child: Form(
-                      key: modalBottomSheetFormKey,
-                      child: ListView(
-                        children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: <Widget>[
-                              Padding(
-                                padding: EdgeInsets.only(bottom: 30, top: 30),
-                                child: Text(
-                                  "Yeni Elan",
-                                  style: TextStyle(fontSize: 26),
-                                ),
+                  padding: EdgeInsets.all(15),
+                  height: MediaQuery.of(context).size.height - 50,
+                  child: Form(
+                    key: modalBottomSheetFormKey,
+                    child: ListView(
+                      children: <Widget>[
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.only(bottom: 30, top: 30),
+                              child: Text(
+                                "Yeni Elan",
+                                style: TextStyle(fontSize: 26),
                               ),
-                            ],
-                          ),
-                          TextFormField(
-                            style: TextStyle(fontSize: 20),
-                            // obscureText: true,
-                            keyboardType: TextInputType.text,
-                            maxLength: 30,
-                            decoration: InputDecoration(
-                              hintText: "Elan adı",
-                              contentPadding: EdgeInsets.fromLTRB(
-                                  20.00, 10.00, 20.00, 10.00),
-                              border: OutlineInputBorder(
-                                  // borderRadius: BorderRadius.only(
-                                  //   topLeft: Radius.circular(20),
-                                  //   topRight: Radius.circular(20),
-                                  // ),
-                                  ),
                             ),
-                            onSaved: (value) {
-                              announceModel.announceName = value;
-                            },
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextFormField(
-                            style: TextStyle(fontSize: 20),
-                            minLines: 5,
-                            maxLines: 5,
-                            maxLength: 50,
-                            //   obscureText: true,
-                            keyboardType: TextInputType.text,
-                            decoration: InputDecoration(
-                              hintText: "Mesajınız",
-                              contentPadding: EdgeInsets.fromLTRB(
-                                  20.00, 10.00, 20.00, 10.00),
-                              border: OutlineInputBorder(
-                                  // borderRadius: BorderRadius.only(
-                                  //   topLeft: Radius.circular(20),
-                                  //   topRight: Radius.circular(20),
-                                  // ),
-                                  ),
-                            ),
-                            onSaved: (value) {
-                              announceModel.message = value;
-                            },
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          ButtonBar(
-                            children: <Widget>[
-                              FlatButton(
-                                color: Colors.blue,
-                                child: Text(
-                                  "Paylaş",
-                                  style: TextStyle(fontSize: 20),
+                          ],
+                        ),
+                        TextFormField(
+                          style: TextStyle(fontSize: 20),
+                          // obscureText: true,
+                          keyboardType: TextInputType.text,
+                          maxLength: 30,
+                          decoration: InputDecoration(
+                            hintText: "Elan adı",
+                            contentPadding:
+                                EdgeInsets.fromLTRB(20.00, 10.00, 20.00, 10.00),
+                            border: OutlineInputBorder(
+                                // borderRadius: BorderRadius.only(
+                                //   topLeft: Radius.circular(20),
+                                //   topRight: Radius.circular(20),
+                                // ),
                                 ),
-                                onPressed: () {
-                                  // setState(() {
-                                  //   modalBottomSheetSubmitted = true;
-                                  // });
-                                  modalBottomSheetFormKey.currentState.save();
-                                  Navigator.pop(context);
-                                  announceModel.announcerFullName =
-                                      "${widget.user.name} ${widget.user.surname}";
-                                  announceModel.announcerPhone =
-                                      widget.user.phoneNumber;
-                                  announceModel.city = widget.user.city;
-                                  announceModel.priceSuggestions = [];
-                                  Firestore.instance
-                                      .collection("announcements")
-                                      .document(widget.user.uid)
-                                      .get()
-                                      .then((onValue) {
-                                    if (onValue.exists) {
-                                      Firestore.instance
-                                          .collection("announcements")
-                                          .document(widget.user.uid)
-                                          .updateData({
-                                        "announces": FieldValue.arrayUnion(
-                                            [announceModel.toMap()])
-                                      });
-                                    } else {
-                                      Firestore.instance
-                                          .collection("announcements")
-                                          .document(widget.user.uid)
-                                          .setData({
-                                        "announces": FieldValue.arrayUnion(
-                                            [announceModel.toMap()])
-                                      });
-                                    }
-                                  });
-                                },
-                              ),
-                            ],
                           ),
-                        ],
-                      ),
-                    ));
+                          onSaved: (value) {
+                            announceModel.announceName = value;
+                          },
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
+                          style: TextStyle(fontSize: 20),
+                          minLines: 5,
+                          maxLines: 5,
+                          maxLength: 50,
+                          //   obscureText: true,
+                          keyboardType: TextInputType.text,
+                          decoration: InputDecoration(
+                            hintText: "Mesajınız",
+                            contentPadding:
+                                EdgeInsets.fromLTRB(20.00, 10.00, 20.00, 10.00),
+                            border: OutlineInputBorder(
+                                // borderRadius: BorderRadius.only(
+                                //   topLeft: Radius.circular(20),
+                                //   topRight: Radius.circular(20),
+                                // ),
+                                ),
+                          ),
+                          onSaved: (value) {
+                            announceModel.message = value;
+                          },
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ButtonBar(
+                          children: <Widget>[
+                            FlatButton(
+                              color: Colors.blue,
+                              child: Text(
+                                "Paylaş",
+                                style: TextStyle(fontSize: 20),
+                              ),
+                              onPressed: () {
+                                // setState(() {
+                                //   modalBottomSheetSubmitted = true;
+                                // });
+                                modalBottomSheetFormKey.currentState.save();
+                                Navigator.pop(context);
+                                announceModel.announcerFullName =
+                                    "${widget.user.name} ${widget.user.surname}";
+                                announceModel.announcerPhone =
+                                    widget.user.phoneNumber;
+                                announceModel.city = widget.user.city;
+                                announceModel.priceSuggestions = [];
+                                Firestore.instance
+                                    .collection("announcements")
+                                    .document(widget.user.uid)
+                                    .get()
+                                    .then((onValue) {
+                                  if (onValue.exists) {
+                                    Firestore.instance
+                                        .collection("announcements")
+                                        .document(widget.user.uid)
+                                        .updateData({
+                                      "announces": FieldValue.arrayUnion(
+                                          [announceModel.toMap()])
+                                    });
+                                  } else {
+                                    Firestore.instance
+                                        .collection("announcements")
+                                        .document(widget.user.uid)
+                                        .setData({
+                                      "announces": FieldValue.arrayUnion(
+                                          [announceModel.toMap()])
+                                    });
+                                  }
+                                });
+                              },
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                );
               });
         },
       ),
@@ -403,11 +402,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   generateListItems(doc) {
     List<AnnounceModel> announceItems = new List<AnnounceModel>();
-    List<Widget> listItems = new List<Widget>();
+   // List<Widget> listItems = new List<Widget>();
     // Firestore.instance.collection("announcements").getDocuments().then((docs){
     //  for(var doc in docs.documents){
     //     print(doc.documentID);
+    int index = doc.data["announces"].length;
     for (var announce in doc.data["announces"].reversed) {
+      index = index - 1;
       List<PriceSuggestionsModel> priceSuggestions =
           new List<PriceSuggestionsModel>();
       //  print("==============="+announce.toString());
@@ -427,6 +428,8 @@ class _MyHomePageState extends State<MyHomePage> {
       }
 
       AnnounceModel model = new AnnounceModel(
+          docId: doc.documentID,
+          index: index,
           announceName: announce["announceName"],
           announcerFullName: announce["AnnouncerFullName"],
           city: announce["City"],

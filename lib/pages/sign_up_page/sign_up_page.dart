@@ -14,8 +14,9 @@ class SignUpPage extends StatefulWidget {
 
 class _SignUpPageState extends State<SignUpPage> {
   static final GlobalKey<FormState> formKey = new GlobalKey<FormState>();
-  static final GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
-  
+  static final GlobalKey<ScaffoldState> scaffoldKey =
+      new GlobalKey<ScaffoldState>();
+
   String password = "", mail = "";
   UserModel userModel = new UserModel();
   Map<String, String> map = {
@@ -43,7 +44,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "Agro Share",
+                      "AgroTaxi",
                       style: TextStyle(fontSize: 30),
                     )
                   ],
@@ -211,7 +212,16 @@ class _SignUpPageState extends State<SignUpPage> {
                       child: Text("Tamam"),
                       color: Colors.blue,
                       onPressed: () {
-                        scaffoldKey.currentState.showSnackBar(SnackBar(content: CircularProgressIndicator(),duration: Duration(minutes: 1),));
+                        scaffoldKey.currentState.showSnackBar(SnackBar(
+                          content: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              CircularProgressIndicator(),
+                            ],
+                          ),
+                          duration: Duration(minutes: 1),
+                        ));
                         formKey.currentState.validate();
                         formKey.currentState.save();
                         FirebaseAuth.instance
@@ -253,9 +263,12 @@ class _SignUpPageState extends State<SignUpPage> {
                               });
                             });
                           });
-                        },onError: (error){
+                        }, onError: (error) {
                           scaffoldKey.currentState.hideCurrentSnackBar();
-                          scaffoldKey.currentState.showSnackBar(SnackBar(content: Text("Xəta baş verdi"),duration: Duration(seconds: 5),));
+                          scaffoldKey.currentState.showSnackBar(SnackBar(
+                            content: Text("Xəta baş verdi"),
+                            duration: Duration(seconds: 5),
+                          ));
                           formKey.currentState.reset();
                         });
                       },

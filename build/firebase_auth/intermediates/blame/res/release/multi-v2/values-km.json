@@ -4,7 +4,7 @@
             "outputFile": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/res/merged/release/values-km/values-km.xml",
             "map": [
                 {
-                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/82ef45a32d87372e9507e9da947a8289/jetified-play-services-basement-16.1.0/res/values-km/values.xml",
+                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/c54ecbfa6ac0ba81649b4a803a350705/jetified-play-services-basement-16.2.0/res/values-km/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/values-km/values.xml",
+                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/values-km/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -60,7 +60,7 @@
             "outputFile": "/Users/arazmaharramli/Desktop/my_apps/agro_share/build/firebase_auth/intermediates/incremental/mergeReleaseResources/merged.dir/values-km/values-km.xml",
             "map": [
                 {
-                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/82ef45a32d87372e9507e9da947a8289/jetified-play-services-basement-16.1.0/res/values-km/values.xml",
+                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/c54ecbfa6ac0ba81649b4a803a350705/jetified-play-services-basement-16.2.0/res/values-km/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -77,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/456202c92c1dd74bd9f59a11cfbd57c2/jetified-play-services-base-16.0.1/res/values-km/values.xml",
+                    "source": "/Users/arazmaharramli/.gradle/caches/transforms-2/files-2.1/89654767603dac923fb09d02045073ee/jetified-play-services-base-16.0.1/res/values-km/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
